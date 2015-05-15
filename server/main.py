@@ -14,7 +14,13 @@ class Upload:
         self.upload_dir = "./upload"
 
     def GET(self):
-        pass
+        return """<html><head></head><body>
+<form method="POST" enctype="multipart/form-data" action="">
+<input type="file" name="img" />
+<br/>
+<input type="submit" />
+</form>
+</body></html>"""
 
     def POST(self):
         data = web.input(img={})
