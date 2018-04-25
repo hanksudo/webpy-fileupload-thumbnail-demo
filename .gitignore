@@ -1,3 +1,4 @@
 upload/
 upload/thumbnail
 .DS_Store
+*.pyc
